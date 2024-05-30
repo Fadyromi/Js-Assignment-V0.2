@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Your Dream Car</title>
+        <!-- ---Bootstarp--- -->
+        <link rel="stylesheet" href="./css/Bootstrap/bootstrap.min.css">
+        <!-- ---CSS Style--- -->
+        <link rel="stylesheet" href="./css/Main.css">
+        <!-- ---Google Fonts--- -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Racing+Sans+One&display=swap"
+            rel="stylesheet">
+        <!-- ---Font Awesome--- -->
+        <link rel="stylesheet"
+            href="./fontawesome-free-6.5.2-web/css/all.min.css">
+
+    </head>
+    <body>
+        <header>
+            <div
+                class="container  d-flex justify-content-center align-items-center ">
+                <div class="lines justify-content-center text-warning ">
+                    <h1><i class="fa-solid fa-flag-checkered px-3"></i>
+                        List Your Dreams Cars
+                        <i class="fa-solid fa-flag-checkered px-3"></i>
+                    </h1>
+
+                </div>
+                <form class="form1">
+                    <label for="Car-Type" class="py-2">Your Car Type</label>
+
+                    <input list="carstyps" type="text" class="form-control"
+                        id="Car-Type">
+
+                    <datalist id="carstyps">
+                        <option value="Sedan"></option>
+                        <option value="Crossover"></option>
+                        <option value="SUVs"></option>
+                        <option value="Hatchback"></option>
+                        <option value="Coupe"></option>
+                        <option value="Pickup Truck"></option>
+                        <option value="Sports Cars"></option>
+
+                    </datalist>
+
+                </form>
+                <form class="form2">
+                    <label for="Car-man" class="py-2">Your Car
+                        Manufacture</label>
+
+                    <input list="carsman" type="text" class="form-control"
+                        id="Car-man">
+
+                    <datalist id="carsman">
+                        <option value="Alfa Romeo"></option>
+                        <option value="Aston Martin"></option>
+                        <option value="Audi"></option>
+                        <option value="BMW"></option>
+                        <option value="Bentley "></option>
+                        <option value="Cadillac"></option>
+                        <option value="Ferrari"></option>
+
+                    </datalist>
+
+                </form>
+                <form class="form3">
+                    <label for="Car-yearModel" class="py-2">Your Car
+                        Type</label>
+
+                    <input list="carsYearModel" type="text" class="form-control"
+                        id="Car-yearModel">
+
+                    <datalist id="carsYearModel">
+                        <option value="60S"></option>
+                        <option value="70S"></option>
+                        <option value="80S"></option>
+                        <option value="90S"></option>
+                        <option value="2000"></option>
+
+                    </datalist>
+
+                </form>
+                <button  onclick="addDream();" class="subbut btn btn-danger border-4 text-white ">Start
+                    Your Dream Ride</button>
+
+            </div>
+        </header>
+        <section>
+            <div class="container">
+                <table class="table mt-4 text-center bg-light border-1 ">
+                    <thead class="border-2">
+                        <tr>
+                            <th
+                                class=" text-bg-danger text-muted">index</th>
+                            <th
+                                class=" text-bg-warning text-muted">Manufacture</th>
+                            <th
+                                class=" text-bg-success text-muted">type</th>
+                            <th
+                                class=" text-bg-danger text-muted">Mode
+                                Year</th>
+                            <th
+                                class=" text-bg-warning text-muted">Vist</th>
+                            <th
+                                class=" text-bg-success text-muted">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody class="border-1" id="tableContent">
+                        <tr>
+                            
+                        </tr>
+
+                    </tbody>
+
+                </table>
+            </div>
+        </section>
+
+        <script src="./Java/main.Js"></script>
+    </body>
+</html>
+
+<!-- <button onclick="deleteDream(i);" class="btn btn-danger w-100" ><i
+    class="fa-solid fa-trash pe-2 "></i>Delete</button> -->

@@ -1,0 +1,64 @@
+
+header {
+    background-image: radial-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(../img/hd_car_wallpapers.jpg);
+    height: 100vh;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.container .lines{
+height: 100px;
+align-items: center;
+/* background-color: red; */
+position: absolute;
+top: 80px;
+font-family: "Racing Sans One", sans-serif;
+font-weight: 400;
+font-style: italic;
+}
+.container .form1{
+    justify-content: center;
+    align-items: center;
+  position: absolute;
+  top: 140px;
+  color: red;
+  
+
+}
+.container .form2{
+    justify-content: center;
+    align-items: center;
+  position: absolute;
+  top: 240px;
+  color: rgb(233, 211, 11);
+  
+
+}
+.container .form3{
+    justify-content: center;
+    align-items: center;
+  position: absolute;
+  top: 340px;
+  
+  color: rgb(22, 216, 22);
+  
+
+}
+
+.container .subbut {
+    color: green;
+    position: absolute;
+    top: 470px;
+}
+.container .inputs input{
+
+}
+/*--------- End Of Header --------*/
+
+/* -------- Section1 Start------- */
+
+section .container table tbody td {
+    text-transform: uppercase;
+}

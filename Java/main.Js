@@ -42,9 +42,9 @@ function addDream() {
 
 /*----------- Display in tabel function-----------*/
 function Dreamdis() {
-
+   var row=""; 
     for (i = 0; i < DreamArray.length; i++) {
-        var row = `<tr>
+         row += `<tr>
         <td>${i + 1}</td>
         <td>${DreamArray[i].Type}</td>
                 <td>${DreamArray[i].Manufacture}</td>
@@ -55,12 +55,12 @@ function Dreamdis() {
                     class="fa-solid fa-eye pe-2 "></i>Visit</button>
         </td>
         <td>
-        <button onclick="deleteDream(i)" class="btn btn-danger w-100" ><i
+        <button onclick="deleteDream(${i})" class="btn btn-danger w-100" ><i
         class="fa-solid fa-trash pe-2 "></i>Delete</button>
         </td>
     </tr>`
     }
-    Dreamcon.innerHTML += row
+    Dreamcon.innerHTML = row
    
 }
 
@@ -69,5 +69,5 @@ function Dreamdis() {
 function deleteDream(i) {
     DreamArray.splice(i,1)
     localStorage.setItem("AllDreams" , JSON.stringify(DreamArray));
-    
+    Dreamdis();
 }
